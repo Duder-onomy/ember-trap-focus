@@ -1,15 +1,43 @@
-<h2 id="title">Welcome to Ember</h2>
+<div style="width: 100%; max-width: 600px; margin-left: auto; margin-right: auto;">
+  <h2>Ember Focus Trap</h2>
 
-<fieldset>
-  <label>DEMO</label>
-  Try pressing tab/shift+tab/up/down/alt+tab
-  <FocusTrap>
-    <input>
-    <textarea/>
-    <button type="button"></button>
-    <a href=""></a>
-    <select></select>
-  </FocusTrap>
-</fieldset>
+  <p>Try pressing tab/shift+tab/up/down/alt+tab.  Notice that focus is stuck inside the focus trap.</p>
 
-{{outlet}}
+  <fieldset style="border: 1px solid lime; padding: 16px;">
+    <label>Focus Trap</label>
+    <FocusTrap>
+      <input placeholder="Inputs">
+      <textarea placeholder="Textareas"></textarea>
+      <button type="button">Buttons</button>
+      <a href="https://wikipedia.com">Links</a>
+      <select>
+        <option value="1">Options numero uno</option>
+        <option value="1">Options numero dos</option>
+        <option value="1">Tres</option>
+      </select>
+    </FocusTrap>
+  </fieldset>
+
+  <p>Notice that elements outside cannot be focused via keyboard nav once the focus trap has captured focus.</p>
+
+  <p>If you focus on one of these, notice that the next `tab` press will give focus to the trap.</p>
+
+  <input placeholder="Other input, NOT inside the focus trap">
+
+  <p>You should also notice that if nothing in the trap, or the DOM has focus, the next `tab` will give focus to the trap.</p>
+
+  <h2>How to use it</h2>
+
+  <p>There should really only be 1 focus trap on the screen at once.</p>
+
+  <p>As soon as you render the component, it will start trapping focus, so dont render it until you want it to take control.</p>
+
+  <p>Something like:</p>
+
+  {{#let (get-code-snippet "focus-trap-modal.hbs") as |snippet|}}
+    <pre class={{snippet.language}}>{{snippet.source}}</pre>
+  {{/let}}
+
+  {{outlet}}
+
+</div>
