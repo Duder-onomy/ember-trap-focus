@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
   root: true,
   parser: 'babel-eslint',
@@ -27,11 +29,9 @@ module.exports = {
   rules: {
     // TODO: Remove when is https://github.com/babel/babel-eslint/issues/530 fixed
     indent: 'off',
-
-    // Allow single-line functions
-    'brace-style': ['error', '1tbs', { allowSingleLine: true }],
-
+    'brace-style': ['error', '1tbs', { allowSingleLine: true }], // Allow single-line functions
     'comma-dangle': ['error', 'always-multiline'],
+    'ember/no-jquery': 'error',
   },
 
   overrides: [

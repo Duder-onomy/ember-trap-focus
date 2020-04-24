@@ -22,7 +22,10 @@ This could be useful if you wanted to trap focus within something like a modal.
 Compatibility
 ------------------------------------------------------------------------------
 
-* Ember Octane? TODO!
+* Ember.js v3.12 or above
+* Ember CLI v2.13 or above
+* Node.js v10 or above
+
 
 Installation
 ------------------------------------------------------------------------------
