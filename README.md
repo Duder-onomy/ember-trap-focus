@@ -9,6 +9,7 @@ https://www.w3.org/TR/wai-aria-practices/examples/menu-button/menu-button-links.
 This could be useful if you wanted to trap focus within something like a modal.
 
 * Does not auto focus the first item.
+  * Scope this [auto-focus modifier](https://github.com/qonto/ember-autofocus-modifier) out if you need that. 
 * When pressing down/tab:
   * When the known focusables are not focused, gives focus to the first item.
   * If focus is on the last known focusable, it gives focus to the first item.
