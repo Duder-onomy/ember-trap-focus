@@ -1,21 +1,39 @@
 module.exports = {
   root: true,
+  parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 2018,
-    sourceType: 'module'
+    sourceType: 'module',
+    ecmaFeatures: {
+      legacyDecorators: true,
+    },
   },
+
   plugins: [
-    'ember'
+    'ember',
+    'ember-suave',
   ],
+
   extends: [
     'eslint:recommended',
-    'plugin:ember/recommended'
+    'plugin:ember-suave/recommended',
+    'plugin:ember/recommended',
   ],
+
   env: {
-    browser: true
+    browser: true,
   },
+
   rules: {
+    // TODO: Remove when is https://github.com/babel/babel-eslint/issues/530 fixed
+    indent: 'off',
+
+    // Allow single-line functions
+    'brace-style': ['error', '1tbs', { allowSingleLine: true }],
+
+    'comma-dangle': ['error', 'always-multiline'],
   },
+
   overrides: [
     // node files
     {
@@ -27,25 +45,30 @@ module.exports = {
         'testem.js',
         'blueprints/*/index.js',
         'config/**/*.js',
-        'tests/dummy/config/**/*.js'
+        'tests/dummy/config/**/*.js',
       ],
+
       excludedFiles: [
         'addon/**',
         'addon-test-support/**',
         'app/**',
-        'tests/dummy/app/**'
+        'tests/dummy/app/**',
       ],
+
       parserOptions: {
-        sourceType: 'script'
+        sourceType: 'script',
       },
+
       env: {
         browser: false,
-        node: true
+        node: true,
       },
+
       plugins: ['node'],
+
       rules: Object.assign({}, require('eslint-plugin-node').configs.recommended.rules, {
         // add your custom rules and overrides for node files here
-      })
-    }
-  ]
+      }),
+    },
+  ],
 };
