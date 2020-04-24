@@ -1,6 +1,7 @@
 # ember-focus-trap
 
 [![Build Status](https://travis-ci.com/Duder-onomy/ember-focus-trap.svg?token=eDXJYpjJqBbzPSDX9AD6&branch=master)](https://travis-ci.com/Duder-onomy/ember-focus-trap)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=Duder-onomy/ember-focus-trap)](https://dependabot.com)
 
 Traps focus within itself. You can navigate child focusable elements with up, down, tab, shift + tab, alt + tab. I have attempted to match the accesibility best practices listed [here](https://www.w3.org/TR/wai-aria-practices/examples/menu-button/menu-button-links.html).
 
