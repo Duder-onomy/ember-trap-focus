@@ -1,5 +1,7 @@
 # ember-focus-trap
 
+[![Build Status](https://travis-ci.com/Duder-onomy/ember-focus-trap.svg?token=eDXJYpjJqBbzPSDX9AD6&branch=master)](https://travis-ci.com/Duder-onomy/ember-focus-trap)
+
 Traps focus within itself.
 You can navigate child focusable elements with up, down, tab, shift + tab, alt + tab
 https://www.w3.org/TR/wai-aria-practices/examples/menu-button/menu-button-links.html
