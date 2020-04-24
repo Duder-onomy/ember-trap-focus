@@ -2,11 +2,9 @@
 
 [![Build Status](https://travis-ci.com/Duder-onomy/ember-focus-trap.svg?token=eDXJYpjJqBbzPSDX9AD6&branch=master)](https://travis-ci.com/Duder-onomy/ember-focus-trap)
 
-Traps focus within itself.
-You can navigate child focusable elements with up, down, tab, shift + tab, alt + tab
-I have attempted to match the accesibility best practices listed [here](https://www.w3.org/TR/wai-aria-practices/examples/menu-button/menu-button-links.html).
+Traps focus within itself. You can navigate child focusable elements with up, down, tab, shift + tab, alt + tab. I have attempted to match the accesibility best practices listed [here](https://www.w3.org/TR/wai-aria-practices/examples/menu-button/menu-button-links.html).
 
-This could be useful if you wanted to trap focus within something like a modal.
+This could be useful if you wanted to trap focus within something like a modal. When you gotta... focus-trap and focus-wrap.
 
 * Does not auto focus the first item.
   * Scope this [auto-focus modifier](https://github.com/qonto/ember-autofocus-modifier) out if you need that.

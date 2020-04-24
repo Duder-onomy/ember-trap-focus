@@ -13,12 +13,10 @@ module.exports = {
 
   plugins: [
     'ember',
-    'ember-suave',
   ],
 
   extends: [
     'eslint:recommended',
-    'plugin:ember-suave/recommended',
     'plugin:ember/recommended',
   ],
 
@@ -68,6 +66,7 @@ module.exports = {
 
       rules: Object.assign({}, require('eslint-plugin-node').configs.recommended.rules, {
         // add your custom rules and overrides for node files here
+        camelcase: 'off',
       }),
     },
   ],
