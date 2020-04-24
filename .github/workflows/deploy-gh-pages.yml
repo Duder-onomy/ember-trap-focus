@@ -14,7 +14,7 @@ jobs:
     - name: Install Dependencies
       run: yarn install --non-interactive
     - name: Build le-App
-      run: ember build --environment production
+      run: yarn run build
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@3.4.8
       with:
