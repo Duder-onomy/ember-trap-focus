@@ -1,1 +1,1 @@
-export { default } from 'ember-focus-trap/utils/focusable-elements';
+export { default } from 'ember-trap-focus/utils/focusable-elements';

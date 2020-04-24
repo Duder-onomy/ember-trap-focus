@@ -4,9 +4,9 @@ import {
   unbindKeyboardShortcuts,
 } from 'ember-keyboard-shortcuts';
 import { whenRouteIdle } from 'ember-app-scheduler';
-import elementIsVisibile from 'ember-focus-trap/utils/element-is-visible';
+import elementIsVisibile from 'ember-trap-focus/utils/element-is-visible';
 import { action } from '@ember/object';
-import FOCUSABLE_ELEMENTS from 'ember-focus-trap/utils/focusable-elements';
+import FOCUSABLE_ELEMENTS from 'ember-trap-focus/utils/focusable-elements';
 
 export default class FocusTrap extends Component {
   keyboardShortcuts = {

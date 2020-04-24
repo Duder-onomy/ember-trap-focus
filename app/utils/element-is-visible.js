@@ -1,1 +1,1 @@
-export { default } from 'ember-focus-trap/utils/element-is-visible';
+export { default } from 'ember-trap-focus/utils/element-is-visible';

@@ -3,7 +3,7 @@
 ## Installation
 
 * `git clone <repository-url>`
-* `cd ember-focus-trap`
+* `cd ember-trap-focus`
 * `yarn install`
 
 ## Linting

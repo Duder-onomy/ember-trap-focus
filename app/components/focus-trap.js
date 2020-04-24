@@ -1,1 +1,1 @@
-export { default } from 'ember-focus-trap/components/focus-trap';
+export { default } from 'ember-trap-focus/components/focus-trap';
