@@ -1,6 +1,6 @@
 # ember-trap-focus
 
-[![Build Status](https://travis-ci.com/Duder-onomy/ember-trap-focus.svg?token=eDXJYpjJqBbzPSDX9AD6&branch=master)](https://travis-ci.com/Duder-onomy/ember-focus-trap)
+[![Build Status](https://travis-ci.org/Duder-onomy/ember-trap-focus.svg?branch=master)](https://travis-ci.org/Duder-onomy/ember-trap-focus)
 [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=Duder-onomy/ember-trap-focus)](https://dependabot.com)
 ![npm](https://img.shields.io/npm/v/ember-trap-focus)
 
