@@ -1,4 +1,5 @@
 ember-focus-trap
+
 ==============================================================================
 
 Traps focus within itselft.
@@ -18,6 +19,8 @@ This could be useful if you wanted to trap focus within something like a modal.
   * gives focus to the previous item
 * attempts to skip hidden items, items with display none of tabindex="-1"
 * accepts splattributes
+
+Checkout the [DEMO](https://duder-onomy.github.io/ember-focus-trap/)
 
 Compatibility
 ------------------------------------------------------------------------------
@@ -39,7 +42,7 @@ Usage
 
 ```handlebars
 <FocusTrap
-  {{!-- accepts splattributes}}
+  {{!-- accepts splattributes --}}
 >
   <input>
   <button>
