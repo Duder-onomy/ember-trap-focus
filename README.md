@@ -23,9 +23,9 @@ This could be useful if you wanted to trap focus within something like a modal. 
 
 Checkout the [DEMO](https://duder-onomy.github.io/ember-trap-focus/)
 
-Very similar to : https://github.com/josemarluedke/ember-trap-focus except that they depend on [focus-trap](https://github.com/davidtheclark/focus-trap) which is a deprecated library, and they expose a modifier.
+Very similar to : https://github.com/josemarluedke/ember-focus-trap except that they depend on [focus-trap](https://github.com/davidtheclark/focus-trap) which is a deprecated and known to be janky library, and they expose a modifier.
 
-Todo: Expose a modifier instead of a component.
+Todo: We should also expose a modifier instead of a component.
 
 Compatibility
 ------------------------------------------------------------------------------
