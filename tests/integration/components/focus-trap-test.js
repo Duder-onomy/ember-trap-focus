@@ -355,4 +355,48 @@ module('Integration | Component | focus-trap', function(hooks) {
 
     assert.dom(generateTestSelector('splatter')).exists();
   });
+
+  module('pressing home', function() {
+    test('gives focus to the first item', async function(assert) {
+      await render(hbs`
+        <FocusTrap>
+          <div data-test-selector="1" tabindex="0"></div>
+          <div data-test-selector="2" tabindex="0"></div>
+          <div data-test-selector="3" tabindex="0"></div>
+          <div data-test-selector="4" tabindex="0"></div>
+          <div data-test-selector="5" tabindex="0"></div>
+        </FocusTrap>
+      `);
+
+      document.querySelector(generateTestSelector('1')).blur();
+
+      assert.dom(generateTestSelector('1')).isNotFocused();
+
+      await triggerKeyEvent(document.body, 'keydown', 36);
+
+      assert.dom(generateTestSelector('1')).isFocused();
+    });
+  });
+
+  module('pressing end', function() {
+    test('gives focus to the last item', async function(assert) {
+      await render(hbs`
+        <FocusTrap>
+          <div data-test-selector="1" tabindex="0"></div>
+          <div data-test-selector="2" tabindex="0"></div>
+          <div data-test-selector="3" tabindex="0"></div>
+          <div data-test-selector="4" tabindex="0"></div>
+          <div data-test-selector="5" tabindex="0"></div>
+        </FocusTrap>
+      `);
+
+      document.querySelector(generateTestSelector('1')).blur();
+
+      assert.dom(generateTestSelector('1')).isNotFocused();
+
+      await triggerKeyEvent(document.body, 'keydown', 35);
+
+      assert.dom(generateTestSelector('5')).isFocused();
+    });
+  });
 });
