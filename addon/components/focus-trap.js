@@ -10,11 +10,13 @@ import FOCUSABLE_ELEMENTS from 'ember-trap-focus/utils/focusable-elements';
 
 export default class FocusTrap extends Component {
   keyboardShortcuts = {
-    down: this.next,
-    up: this.previous,
-    tab: this.next,
-    'shift+tab': this.previous,
     'alt+tab': this.previous,
+    'end': this.focusLastItem,
+    'home': this.focusFirstItem,
+    'shift+tab': this.previous,
+    down: this.next,
+    tab: this.next,
+    up: this.previous,
   };
 
   focusTrapContainerElement = null;
@@ -45,6 +47,24 @@ export default class FocusTrap extends Component {
     }
 
     return currentlyFocused;
+  }
+
+  focusFirstItem(e) {
+    e.stopPropagation();
+    e.preventDefault();
+
+    let focusables = this.getAllFocusableChildren();
+
+    focusables[0] && focusables[0].focus();
+  }
+
+  focusLastItem(e) {
+    e.stopPropagation();
+    e.preventDefault();
+
+    let focusables = this.getAllFocusableChildren();
+
+    focusables[focusables.length - 1].focus();
   }
 
   next(e) {
