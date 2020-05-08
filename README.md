@@ -10,14 +10,18 @@ This could be useful if you wanted to trap focus within something like a modal. 
 
 * Does not auto focus the first item.
   * Scope this [auto-focus modifier](https://github.com/qonto/ember-autofocus-modifier) out if you need that.
-* When pressing down/tab:
+* When pressing `dow` or `tab`:
   * When the known focusables are not focused, gives focus to the first item.
   * If focus is on the last known focusable, it gives focus to the first item.
   * Gives focus to the next item.
-* When pressing up/shift+tab/alt+tab:
+* When pressing `up` or `shift+tab` or `alt+tab`:
   * When the known focusables are not focused, gives focus to the last item.
   * If focus is on the first known focuable, it gives focus to the last item.
   * Gives focus to the previous item.
+* When pressing `home`:
+  * Gives focus to the first item.
+* When pressing `end`:
+  * Gives focus to the last item.
 * Attempts to skip hidden items and items with display none of tabindex="-1".
 * Accepts splattributes.
 
