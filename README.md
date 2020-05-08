@@ -1,7 +1,8 @@
 # ember-trap-focus
 
-[![Build Status](https://travis-ci.com/Duder-onomy/ember-trap-focus.svg?token=eDXJYpjJqBbzPSDX9AD6&branch=master)](https://travis-ci.com/Duder-onomy/ember-trap-focus)
+[![Build Status](https://travis-ci.org/Duder-onomy/ember-trap-focus.svg?branch=master)](https://travis-ci.org/Duder-onomy/ember-trap-focus)
 [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=Duder-onomy/ember-trap-focus)](https://dependabot.com)
+![npm](https://img.shields.io/npm/v/ember-trap-focus)
 
 Traps focus within itself. You can navigate child focusable elements with up, down, tab, shift + tab, alt + tab. I have attempted to match the accesibility best practices listed [here](https://www.w3.org/TR/wai-aria-practices/examples/menu-button/menu-button-links.html).
 
@@ -22,9 +23,9 @@ This could be useful if you wanted to trap focus within something like a modal. 
 
 Checkout the [DEMO](https://duder-onomy.github.io/ember-trap-focus/)
 
-Very similar to : https://github.com/josemarluedke/ember-trap-focus except that they depend on [focus-trap](https://github.com/davidtheclark/focus-trap) which is a deprecated library, and they expose a modifier.
+Very similar to : https://github.com/josemarluedke/ember-focus-trap except that they depend on [focus-trap](https://github.com/davidtheclark/focus-trap) which is a deprecated and known to be janky library, and they expose a modifier.
 
-Todo: Expose a modifier instead of a component.
+Todo: We should also expose a modifier instead of a component.
 
 Compatibility
 ------------------------------------------------------------------------------
