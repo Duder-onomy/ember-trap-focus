@@ -4799,9 +4799,9 @@ elliptic@^6.0.0:
     minimalistic-crypto-utils "^1.0.0"
 
 ember-app-scheduler@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/ember-app-scheduler/-/ember-app-scheduler-4.0.1.tgz#670fc0c28a28367a1aea7e5286d0d73e90561e19"
-  integrity sha512-K29+tzArM9Gx5VGtDuH35yoAIhS1hOUZ7EtdOXae09uDxkbuyhTvZHfTB2u0Eq7FhT56TGLZ03x3u9RyBT0o8Q==
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/ember-app-scheduler/-/ember-app-scheduler-4.0.2.tgz#77d2b42c8e5ec2d11226e4d72ae4088357a3a68b"
+  integrity sha512-Bs5qGPN7oZlEoNzfN0dsi/BeBiCSCzHKCQjx80ZqYDpxw4vBHFCkxtzn1PImM30yNhb4Bn1NlOi9rfIYp4F1FA==
   dependencies:
     "@types/ember" "^3.1.0"
     "@types/rsvp" "^4.0.2"
