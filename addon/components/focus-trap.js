@@ -30,8 +30,9 @@ export default class FocusTrap extends Component {
     bindKeyboardShortcuts(this);
   }
 
-  willDestroy() {
+  willDestroy(...args) {
     unbindKeyboardShortcuts(this);
+    super.willDestroy(...args);
   }
 
   getAllFocusableChildren() {
